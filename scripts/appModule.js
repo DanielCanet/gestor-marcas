@@ -1,8 +1,8 @@
 define([
 "angular",
-"angular-material",
-"appController"
-],function(angular, ngMaterial, appController){
+"appController",
+"angular-material"
+],function(angular, appController){
 	var app = angular.module("appDemo", ['ngMaterial']);
 	appController(app);
 	
