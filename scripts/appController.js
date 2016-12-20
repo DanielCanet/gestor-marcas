@@ -6,7 +6,11 @@ define([
 		/*opcion 2*/
 		
 		function Controller(scope){
-			scope.name = "gestor marcas prueba";
+			
+			vm=this;
+			
+			vm.name = "gestor marcas prueba";
+			
 		}
 		
 		app.controller("appController", Controller);

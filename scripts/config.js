@@ -1,11 +1,13 @@
 requirejs.config({
     baseUrl: 'scripts',
     paths: {
+		'text' : '../node_modules/text/text',
 		'jquery' : '../node_modules/jquery/dist/jquery',
 		'angular' : '../node_modules/angular/angular',
 		'angular-material' : '../node_modules/angular-material/angular-material',
 		'angular-animate' : '../node_modules/angular-animate/angular-animate',
-		'angular-aria' : '../node_modules/angular-aria/angular-aria'
+		'angular-aria' : '../node_modules/angular-aria/angular-aria',
+		'tmp' : '../templates'
     },
     shim: {
 		'angular': {
@@ -24,7 +26,7 @@ requirejs.config({
 			deps: ['angular'],			
 			exports: 'ngAria'
 		}		
-    }
+    }	
 
 });
 
