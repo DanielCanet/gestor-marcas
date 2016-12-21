@@ -2,9 +2,14 @@ define([
 "angular",
 "appController",
 "appEdadDirective",
-"angular-material",
-"modeloService"
-],function(angular, appController, appEdadDirective, modeloService){
+"modeloService",
+"angular-material"
+],function(
+	angular, 
+	appController, 
+	appEdadDirective, 
+	modeloService){
+
 	var app = angular.module("appDemo", ['ngMaterial']);
 	appController(app);
 	appEdadDirective(app);

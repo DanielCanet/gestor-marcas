@@ -4,17 +4,22 @@ define([
 	return function (app){
 		
 		/*opcion 2*/
+
 		
-		function Controller(scope){
+		function Controller(scope, modeloService){
 			
 			vm=this;
 			
-			vm.name = "gestor marcas prueba";
+			scope.name = "gestor marcas prueba";
+
+			(function(){
+				scope.edad = modeloService.getEdad();
+			})();
 			
 		}
 		
 		app.controller("appController", Controller);
-		Controller.$inject=["$scope"];
+		Controller.$inject=["$scope", "modeloService"];
 		
 		/*
 		opcion 1

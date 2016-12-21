@@ -2,7 +2,7 @@ define([
 "text!tmp/edadTemplate.html"
 ], function(edadTemplate){
 
-	return function (app){
+	return function(app){
 
 		function Directive(){
 			return {

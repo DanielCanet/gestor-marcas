@@ -1,9 +1,10 @@
-define([], function(){
+define([
+
+], function(){
+
 	return function(app){
 		
-		"use strict";
-		
-		function Factory(){
+		function Service(){
 			var atleta = {
 				edad: 35
 			}
@@ -22,7 +23,7 @@ define([], function(){
 			}
 		}	
 	
-		app.factory("modeloService", Factory);
-	}
+		app.factory("modeloService", Service);
+	};
 
 });
